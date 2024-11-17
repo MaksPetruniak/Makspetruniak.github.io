@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інформація про сторінку</title>
+</head>
+<body>
+    <script language="JavaScript">
+        var bgc = document.bgColor; // Отримання поточного кольору фону
+        var url = document.location; // Отримання URL сторінки
+        var lm = document.lastModified; // Отримання часу останніх змін сторінки
+
+        // Виведення інформації на сторінку
+        document.write("Колір фону цієї сторінки: <b>" + bgc + "</b><br>");
+        document.write("URL цієї сторінки: <b>" + url + "</b><br>");
+        document.write("Останні зміни внесені: <b>" + lm + "</b><br>");
+
+        // Зміна кольору фону сторінки на блакитний
+        document.bgColor = "#00FFFF";
+
+        // Виведення повідомлення
+        document.writeln("<b>Hello world!</b>");
+    </script>
+</body>
+</html>
