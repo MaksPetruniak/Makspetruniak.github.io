@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інформація про браузер</title>
+</head>
+<body>
+    <script language="JavaScript">
+        // Отримання інформації про браузер
+        var an = navigator.appName; // Назва браузера
+        var av = navigator.appVersion; // Версія браузера
+        var acn = navigator.appCodeName; // Кодова назва браузера
+        var ua = navigator.userAgent; // User-Agent
+
+        // Виведення інформації на сторінку
+        document.write("Ви користуєтеся <b>" + an + "</b>, версія " + av + ".<br>Кодова назва " + acn + ", заголовок " + ua + ".");
+    </script>
+</body>
+</html>
