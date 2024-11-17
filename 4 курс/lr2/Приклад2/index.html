@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Підтвердження дії</title>
+    <script language="JavaScript">
+        function confirmAction() {
+            if (confirm("Упевнені, що хочете переглянути документ?")) {
+                alert("Щасливої дороги");
+            } else {
+                alert("Тоді залишайтеся");
+                window.close();
+            }
+        }
+    </script>
+</head>
+<body onload="confirmAction()">
+</body>
+</html>
