@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приклад посилання</title>
+    <script>
+        function showAlert() {
+            alert("Ви навели курсор на посилання!");
+        }
+    </script>
+</head>
+<body>
+    <!-- Посилання на Google з обробниками подій -->
+    <a href="https://www.google.com" 
+       name="googleLink" 
+       target="_blank" 
+       onClick="console.log('Посилання було натиснуто!');" 
+       onMouseOver="showAlert()">
+        Перейти на Google
+    </a>
+</body>
+</html>
