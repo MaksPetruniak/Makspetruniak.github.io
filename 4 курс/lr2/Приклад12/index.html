@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зміна зображення при наведенні</title>
+</head>
+<body>
+    <!-- Посилання зі зображенням, яке змінюється при наведенні курсора -->
+    <a href="#" 
+       onMouseOver="document.myImage2.src='https://via.placeholder.com/160x50/ff6347/ffffff?text=Hover+Image'" 
+       onMouseOut="document.myImage2.src='https://via.placeholder.com/160x50/4682b4/ffffff?text=Normal+Image'">
+        <img src="https://via.placeholder.com/160x50/4682b4/ffffff?text=Normal+Image" 
+             name="myImage2" 
+             width="160" 
+             height="50" 
+             border="0" 
+             alt="Зображення">
+    </a>
+</body>
+</html>
