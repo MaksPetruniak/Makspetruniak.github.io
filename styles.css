@@ -6,8 +6,8 @@
 }
 
 body {
-    background-color: #7ec1b6;
-    color: #333;
+    background-color: #5fe023b7;
+    color: #100e0e;
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -17,7 +17,7 @@ body {
     display: flex;
     max-width: 1200px;
     width: 100%;
-    background-color: #c0efe0;
+    background-color: #96aa99;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
@@ -26,7 +26,7 @@ body {
 /* Стиль лівої колонки */
 .sidebar {
     width: 25%;
-    background-color: #06568b;
+    background-color: #214325;
     color: #ffffff;
     padding: 20px;
     text-align: center;
