@@ -1,47 +1,205 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #7ec1b6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    background-color: #c0efe0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Стиль лівої колонки */
+.sidebar {
+    width: 25%;
+    background-color: #06568b;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 70%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #e0f1e3;
+}
+
+.personal-info h3, .personal-info h4 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: #f1f1f1;
+}
+
+.personal-info p {
+    margin: 8px 0;
+    font-size: 0.9em;
+}
+
+hr {
+    border: 2;
+    height: 2px;
+    background: #ffffff30;
+    margin: 10px 0;
+}
+
+/* Стиль основного контенту */
+.main-content {
+    width: 75%;
+    padding: 30px;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(to right, #F2994A, #F2C94C);
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
+header nav a {
+    margin: 0 15px;
+    color: #a036ff;
     text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #6701a8;
+}
+
+header h1 {
+    font-size: 2.5em;
     color: #333;
-    font-size: 16px;
+    margin: 10px 0;
 }
 
-.icons a {
-    margin-left: 10px;
+.social-icons {
+    margin: 15px 0;
 }
 
-.icons img {
-    width: 20px;
-    height: 20px;
+.social-icons a img {
+    width: 35px;
+    height: 35px;
+    margin: 0 5px;
+    border-radius: 50%;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid #333;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Стиль секцій */
+section {
+    margin-bottom: 25px;
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #a036ff;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 5px;
+}
+
+section h3 {
+    font-size: 1.3em;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+section p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Стиль секції проєктів */
+#portfolio {
+    margin-bottom: 30px;
+}
+
+.project {
+    margin-top: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.project-image:hover {
+    transform: scale(1.02);
+}
+
+/* Додаткові стилі для навичок і курсів */
+section h2, section h3 {
+    color: #333;
+}
+
+.section p {
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 2px;
+    background: #000000;
+    color: #fff;
+    font-size: 0.9em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.btn {
+    margin-top: 10px;
+    display: block;
+    width: 300px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #000;
+    color: #fff;
 }
